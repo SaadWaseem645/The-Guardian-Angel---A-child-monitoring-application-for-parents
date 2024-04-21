@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_blue"
+    android:padding="20dp"
+    tools:context=".Activities.SetPinActivity">
+
+    <LinearLayout
+        android:id="@+id/set_pin_view_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_black"
+            android:textColor="@color/white"
+            android:text="@string/set_pin"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/set_pin_description" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white" />
+
+        <com.chaos.view.PinView
+            android:id="@+id/set_pin_view"
+            style="@style/PinWidget.PinView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:cursorVisible="true"
+            android:textColor="@color/white"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cursorWidth="2dp"
+            app:itemCount="4"
+            app:itemHeight="50dp"
+            app:itemRadius="8dp"
+            app:itemSpacing="10dp"
+            app:itemWidth="50dp"
+            app:lineColor="@color/light_blue"
+            app:lineWidth="2dp"
+            app:viewType="rectangle" />
+
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/set_pin_view_linear_layout"
+        android:layout_above="@id/set_pin_continue"
+        android:columnCount="3"
+        android:rowCount="4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="1"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="0"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="2"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="0"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="3"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="0"
+            android:layout_column="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="4"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="5"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="1"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="6"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="1"
+            android:layout_column="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="7"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="2"
+            android:layout_column="0"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="8"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="2"
+            android:layout_column="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/white"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="9"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="2"
+            android:layout_column="2"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/fa_solid_900"
+            android:gravity="center_vertical|center_horizontal"
+            android:onClick="removeText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="&#xf55a;"
+            android:textSize="30sp"
+            android:layout_row="3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:background="?android:selectableItemBackground"
+            android:textColor="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_medium"
+            android:onClick="addText"
+            android:paddingTop="@dimen/number_padding"
+            android:text="0"
+            android:gravity="center_vertical|center_horizontal"
+            android:textSize="30sp"
+            android:layout_row="3"
+            android:layout_column="1"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/set_pin_continue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/dark_green"
+        android:text="@string/_continue" />
+</RelativeLayout>

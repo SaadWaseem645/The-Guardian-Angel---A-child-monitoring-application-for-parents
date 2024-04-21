@@ -1,0 +1,1080 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_blue"
+    android:orientation="vertical"
+    android:weightSum="9"
+    tools:context=".Activities.MainMenuActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/menu_card_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/default_view_padding">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/main_menu_profile_change_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_back_button"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="horizontal"
+                    android:paddingEnd="@dimen/default_rounded_corner_padding">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_back_button" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/default_margin_half"
+                        android:fontFamily="@font/poppins_medium"
+                        android:paddingTop="2dp"
+                        android:text="@string/change_profile"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/online_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/current_status"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/main_menu_online_status_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/default_margin_half"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/offline"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/main_menu_online_status_image"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_offline" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--            <LinearLayout-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignParentRight="true"-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:paddingHorizontal="@dimen/default_rounded_corner_padding"-->
+            <!--                android:background="@drawable/selector_screen_mirror"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <TextView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginEnd="@dimen/default_margin_half"-->
+            <!--                    android:textSize="10sp"-->
+            <!--                    android:paddingTop="2dp"-->
+            <!--                    android:textColor="@color/white"-->
+            <!--                    android:fontFamily="@font/poppins_medium"-->
+            <!--                    android:text="@string/screen_mirror" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="30dp"-->
+            <!--                    android:layout_height="30dp"-->
+            <!--                    android:src="@drawable/ic_mirror" />-->
+
+            <!--            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="@dimen/default_margin"
+                    android:src="@drawable/ic_profile_boy" />
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_margin_half"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/option_text" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <LinearLayout
+                    android:id="@+id/login_language_change"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_blue_button"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="@dimen/default_rounded_corner_padding">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/fa_solid_900"
+                        android:text="@string/fa_language"
+                        android:textSize="30sp"
+                        android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin_half"
+        android:layoutDirection="ltr"
+        android:background="@color/white"
+        app:cardCornerRadius="@dimen/menu_card_radius">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_view_padding_half"
+            android:weightSum="9">
+
+            <LinearLayout
+                android:id="@+id/logout_button"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_logout"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/small_option_text"
+                    android:text="@string/logout"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                        android:id="@+id/tooltip_logout"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin_half"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_menu_screen_mirror_button"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_camera"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/small_option_text"
+                    android:text="@string/screen_mirror"
+                    android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/tooltip_mirror"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin_half"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/installed_application_list"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_mobile"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:textSize="@dimen/small_option_text"
+                    android:text="@string/option5"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                        android:id="@+id/tooltip_apps"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin_half"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/default_margin"
+        android:background="@color/white"
+        android:layoutDirection="ltr"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/default_view_padding"
+            android:paddingTop="@dimen/default_view_padding"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:id="@+id/option_converations"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_sms"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/option1"
+                        android:textSize="@dimen/small_option_text"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/tooltip_sms"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/social_media_button"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_social_media"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/option2"
+                        android:textSize="@dimen/small_option_text"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/tooltip_social"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/default_view_padding"
+            android:paddingTop="@dimen/default_view_padding"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:id="@+id/option_contacts"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_contact"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/option4"
+                        android:textSize="@dimen/small_option_text"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/tooltip_contacts"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/app_usage_list"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_time"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/option6"
+                        android:textSize="@dimen/small_option_text"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/tooltip_screentime"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/default_view_padding"
+            android:paddingTop="@dimen/default_view_padding"
+            android:weightSum="6">
+
+            <LinearLayout
+                android:id="@+id/option_location"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_location"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/option3"
+                        android:textSize="@dimen/small_option_text"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/tooltip_location"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/option_geotrigger"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_geotrigger"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/geofence_trigger"
+                        android:textSize="@dimen/small_option_text"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/tooltip_trigger"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:background="@color/white"
+            android:baselineAligned="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/default_view_padding"
+            android:paddingTop="@dimen/default_view_padding"
+            android:weightSum="3">
+
+            <LinearLayout
+                android:id="@+id/option_app_schedule"
+                style="@style/SelectableItemBackground"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/fa_solid_900"
+                    android:text="@string/fa_schedule"
+                    android:textColor="@color/theme_blue"
+                    android:textSize="@dimen/default_header_text" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/app_schedules"
+                        android:textSize="@dimen/small_option_text"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/tooltip_schedule"
+                        android:layout_width="@dimen/default_tooltip"
+                        android:layout_height="@dimen/default_tooltip"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/default_margin"
+                        android:background="@drawable/ic_button_tooltip"
+                        android:foreground="?attr/selectableItemBackgroundBorderless" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:layoutDirection="ltr"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/changePinOption"
+            style="@style/SelectableItemBackground"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_view_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/fa_solid_900"
+                android:text="@string/fa_pin"
+                android:textColor="@color/theme_blue"
+                android:textSize="@dimen/default_header_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/default_margin"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/small_option_text"
+                android:text="@string/change_pin"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/tooltip_change_pin"
+                android:layout_width="@dimen/default_tooltip"
+                android:layout_height="@dimen/default_tooltip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/default_margin_half"
+                android:background="@drawable/ic_button_tooltip"
+                android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/stopMonitoringOption"
+            style="@style/SelectableItemBackground"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/default_view_padding">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/fa_solid_900"
+                android:text="@string/fa_cross"
+                android:textColor="@color/theme_blue"
+                android:textSize="@dimen/default_header_text" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/default_margin_half"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="@dimen/small_option_text"
+                android:text="@string/monitor_stop"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/tooltip_stop"
+                android:layout_width="@dimen/default_tooltip"
+                android:layout_height="@dimen/default_tooltip"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/default_margin_half"
+                android:background="@drawable/ic_button_tooltip"
+                android:foreground="?attr/selectableItemBackgroundBorderless" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_margin="@dimen/default_margin"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="@color/cardview_dark_background"-->
+    <!--        app:cardCornerRadius="@dimen/menu_card_radius">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:padding="@dimen/default_view_padding">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginRight="@dimen/default_margin_half"-->
+    <!--                android:src="@drawable/ic_call_log" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:fontFamily="@font/poppins_medium"-->
+    <!--                android:text="@string/option1"-->
+    <!--                android:textSize="@dimen/option_text" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/background_green_rounded_corner"-->
+    <!--                android:paddingHorizontal="@dimen/default_rounded_corner_padding"-->
+    <!--                android:textColor="@color/grey"-->
+    <!--                android:text="6 SMS/ 2 Calls" />-->
+
+
+    <!--        </LinearLayout>-->
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_margin="@dimen/default_margin"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="@color/cardview_dark_background"-->
+    <!--        app:cardCornerRadius="@dimen/menu_card_radius">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:padding="@dimen/default_view_padding">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginRight="@dimen/default_margin_half"-->
+    <!--                android:src="@drawable/ic_social" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:fontFamily="@font/poppins_medium"-->
+    <!--                android:text="@string/option2"-->
+    <!--                android:textSize="@dimen/option_text" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/background_green_rounded_corner"-->
+    <!--                android:paddingHorizontal="@dimen/default_rounded_corner_padding"-->
+    <!--                android:textColor="@color/grey"-->
+    <!--                android:text="6 Messages" />-->
+    <!--        </LinearLayout>-->
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_margin="@dimen/default_margin"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="@color/cardview_dark_background"-->
+    <!--        app:cardCornerRadius="@dimen/menu_card_radius">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:padding="@dimen/default_view_padding">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginRight="@dimen/default_margin_half"-->
+    <!--                android:src="@drawable/ic_location" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:fontFamily="@font/poppins_medium"-->
+    <!--                android:text="@string/option3"-->
+    <!--                android:textSize="@dimen/option_text" />-->
+
+    <!--        </LinearLayout>-->
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_margin="@dimen/default_margin"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="@color/cardview_dark_background"-->
+    <!--        app:cardCornerRadius="@dimen/menu_card_radius">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:padding="@dimen/default_view_padding">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginRight="@dimen/default_margin_half"-->
+    <!--                android:src="@drawable/ic_contacts" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:fontFamily="@font/poppins_medium"-->
+    <!--                android:text="@string/option4"-->
+    <!--                android:textSize="@dimen/option_text" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/background_green_rounded_corner"-->
+    <!--                android:paddingHorizontal="@dimen/default_rounded_corner_padding"-->
+    <!--                android:text="150 Contacts"-->
+    <!--                android:textColor="@color/grey"/>-->
+    <!--        </LinearLayout>-->
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_margin="@dimen/default_margin"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="@color/cardview_dark_background"-->
+    <!--        app:cardCornerRadius="@dimen/menu_card_radius">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:padding="@dimen/default_view_padding">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginRight="@dimen/default_margin_half"-->
+    <!--                android:src="@drawable/ic_apps" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:fontFamily="@font/poppins_medium"-->
+    <!--                android:text="@string/option5"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="@dimen/option_text" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/background_green_rounded_corner"-->
+    <!--                android:paddingHorizontal="@dimen/default_rounded_corner_padding"-->
+    <!--                android:text="55 Applications"-->
+    <!--                android:textColor="@color/grey"/>-->
+    <!--        </LinearLayout>-->
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_margin="@dimen/default_margin"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="@color/cardview_dark_background"-->
+    <!--        app:cardCornerRadius="@dimen/menu_card_radius">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:padding="@dimen/default_view_padding">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginRight="@dimen/default_margin_half"-->
+    <!--                android:src="@drawable/ic_apps" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:fontFamily="@font/poppins_medium"-->
+    <!--                android:text="@string/option6"-->
+    <!--                android:textAlignment="center"-->
+    <!--                android:textSize="@dimen/option_text" />-->
+
+    <!--            <View-->
+    <!--                android:layout_width="0dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_weight="1" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:background="@drawable/background_green_rounded_corner"-->
+    <!--                android:paddingHorizontal="@dimen/default_rounded_corner_padding"-->
+    <!--                android:text="55 Applications"-->
+    <!--                android:textColor="@color/grey"/>-->
+    <!--        </LinearLayout>-->
+
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+    <!--    <com.google.android.material.card.MaterialCardView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        android:layout_margin="@dimen/default_margin"-->
+    <!--        android:layout_weight="1"-->
+    <!--        android:background="@color/cardview_dark_background"-->
+    <!--        app:cardCornerRadius="@dimen/menu_card_radius">-->
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="center_vertical"-->
+    <!--            android:padding="@dimen/default_view_padding">-->
+
+    <!--            <ImageView-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginRight="@dimen/default_margin_half"-->
+    <!--                android:src="@drawable/ic_logout" />-->
+
+    <!--            <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:fontFamily="@font/poppins_medium"-->
+    <!--                android:text="Logout"-->
+    <!--                android:textSize="@dimen/option_text" />-->
+
+    <!--        </LinearLayout>-->
+    <!--    </com.google.android.material.card.MaterialCardView>-->
+
+</LinearLayout>

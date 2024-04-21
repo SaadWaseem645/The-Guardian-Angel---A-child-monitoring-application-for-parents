@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sos_widget_button"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:theme="@style/ThemeOverlay.GuardianAngel.AppWidgetContainer">
+
+    <LinearLayout
+        android:id="@+id/widget_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_semitransparent_rounded_corner"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_sos"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_icon"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        android:text="SOS"/>
+
+</RelativeLayout>

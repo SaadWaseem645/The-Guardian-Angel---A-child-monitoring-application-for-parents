@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    android:id="@+id/conversation"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/white"
+    android:background="@drawable/background_grey_rounded_corner_pressed"
+    android:textSize="@dimen/default_text_view_size"
+    android:padding="@dimen/default_view_padding_double"
+    android:layout_marginVertical="@dimen/default_margin"
+    android:fontFamily="@font/poppins_black"
+    android:layout_marginHorizontal="@dimen/default_margin_double"/>

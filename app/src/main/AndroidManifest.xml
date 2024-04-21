@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.infernalbitsoft.guardianangel">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Activities.AllSetLogoutActivity"></activity>
+        <activity android:name=".Activities.AllSetActivity" />
+        <activity android:name=".Activities.ParentSetPinActivity" />
+
+        <service
+            android:name=".Services.SOSLocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver android:name=".Widgets.SosWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/sos_widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".Activities.SosActivity"
+            android:theme="@style/LoginActivityTheme" />
+        <activity android:name=".Activities.AppRestrictedActivity" />
+        <activity android:name=".Activities.AppLimitsActivity" />
+        <activity android:name=".Activities.AppUsageActivity" />
+        <activity android:name=".Activities.GeofenceHistoryActivity" />
+        <activity android:name=".Activities.MarkerEditActivity" />
+
+        <receiver
+            android:name=".BroadcastReceiver.GeofenceBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".BroadcastReceiver.DeviceWakeUpReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".BroadcastReceiver.DeviceAdmin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/device_admin" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+                <action android:name="android.app.action.ACTION_DEVICE_ADMIN_DISABLE_REQUESTED" />
+                <action android:name="android.app.action.ACTION_DEVICE_ADMIN_DISABLED" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activities.PermissionActivity" />
+        <activity
+            android:name=".Activities.ForgotPassword"
+            android:theme="@style/LoginActivityTheme" />
+        <activity android:name=".Activities.SocialMessageActivity" />
+        <activity android:name=".Activities.AppLockActivity" />
+        <activity android:name=".Activities.SmsActivity" />
+        <activity android:name=".Activities.SmsLogActivity" />
+        <activity android:name=".Activities.MirrorFullActivity" />
+        <activity android:name=".Activities.ProjectionActivity" />
+        <activity android:name=".Activities.ScreenMirrorActivity" />
+        <activity android:name=".Activities.ParentChildProfileActivity" />
+        <activity android:name=".Activities.ContactsActivity" />
+        <activity android:name=".Activities.SetPinActivity" />
+        <activity android:name=".Activities.ChildProfileActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBmhC4JnGkxPmrIT9MUKU5IN21R8VyXY5M" />
+
+        <activity
+            android:name=".Activities.LocationActivity"
+            android:label="@string/title_activity_location" />
+
+        <receiver
+            android:name=".BroadcastReceiver.BootStartReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+                <action android:name="android.intent.action.REBOOT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".Activities.PermissionsActivity" />
+        <activity
+            android:name=".Activities.RegistrationActivity"
+            android:theme="@style/LoginActivityTheme" />
+        <activity android:name=".Activities.InstalledAppsActivity" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:theme="@style/LoginActivityTheme" />
+        <activity android:name=".Activities.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Services.DataService"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".Services.LocationService"
+            android:exported="true" />
+        <service
+            android:name=".Services.InstalledAppService"
+            android:exported="true" />
+        <service
+            android:name=".Services.CompoundService"
+            android:exported="true" />
+        <service
+            android:name=".Services.ScreenCaptureService"
+            android:foregroundServiceType="mediaProjection" />
+
+        <activity android:name=".Activities.SocialMediaActivity" />
+        <activity android:name=".Activities.MainMenuActivity" />
+        <activity android:name=".Activities.MainActivity" />
+
+        <service
+            android:name=".Services.NotificationListener"
+            android:label="Guardian Angel"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".Services.MessageGrabService"
+            android:label="Guardian Angel Accessibility Monitor"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessibility_service_config" />
+        </service>
+    </application>
+
+</manifest>

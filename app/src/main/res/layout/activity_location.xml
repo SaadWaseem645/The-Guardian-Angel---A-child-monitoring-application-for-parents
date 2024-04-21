@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_blue"
+    android:layoutDirection="ltr"
+    android:orientation="vertical">
+
+    <include layout="@layout/component_header" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:layout_marginVertical="2dp"
+        android:text="@string/locationHint"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/default_small_text"/>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:context=".Activities.LocationActivity" />
+
+    <LinearLayout
+        android:id="@+id/geofence_delete_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20dp"
+        android:visibility="gone"
+        style="?attr/buttonBarStyle"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/geofence_delete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/theme_dark_blue"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_weight="6"/>
+
+        <Button
+            android:id="@+id/geofence_delete_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/default_button_text_size"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginStart="5dp"
+            android:text="@string/fa_cross"
+            android:textColor="@color/white"
+            style="?attr/buttonBarButtonStyle"
+            android:backgroundTint="@color/dark_red"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/geofence_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/add_geofence"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/option_text"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="@dimen/default_view_padding"/>
+
+    <LinearLayout
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/geofence_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/geo_name"
+            android:layout_weight="5"
+            android:inputType="text"
+            android:layout_marginEnd="10dp"/>
+
+        <Button
+            android:id="@+id/geofence_add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/theme_dark_blue"
+            android:layout_weight="2"/>
+
+        <Button
+            android:id="@+id/geofence_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/default_button_text_size"
+            android:fontFamily="@font/fa_solid_900"
+            android:layout_marginStart="5dp"
+            android:text="@string/fa_cross"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/dark_red"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/radiusSlider"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:valueFrom="5.0"
+        android:valueTo="5000.0"
+        android:value="500.0"
+        android:stepSize="5.0"/>
+
+    </LinearLayout>
+</LinearLayout>

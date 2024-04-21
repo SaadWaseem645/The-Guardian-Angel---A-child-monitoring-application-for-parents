@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_gradient_green"
+    android:padding="@dimen/default_view_padding"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/set_limit_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/option_text"
+        android:textColor="@color/white"
+        android:text=""/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/default_small_text"
+        android:textColor="@color/white"
+        android:text="@string/hrs"/>
+
+    <Spinner
+        android:id="@+id/limit_hours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/default_small_text"
+        android:textColor="@color/white"
+        android:text="@string/mins"/>
+
+    <Spinner
+        android:id="@+id/limit_minutes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/submit_limit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/theme_dark_blue"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/white"
+        android:text="@string/_set" />
+
+</LinearLayout>

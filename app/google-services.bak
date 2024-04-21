@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "931248924672",
+    "firebase_url": "https://guardian-angel-bcd8f.firebaseio.com",
+    "project_id": "guardian-angel-bcd8f",
+    "storage_bucket": "guardian-angel-bcd8f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931248924672:android:0ce29ec79063f4ed09d0e5",
+        "android_client_info": {
+          "package_name": "com.infernalbitsoft.guardianangel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931248924672-7nlmifgej83ifnjjonoi1csk5hp0dsl9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.infernalbitsoft.guardianangel",
+            "certificate_hash": "3f5452bad97752f028b02b9208a350ee5dd22960"
+          }
+        },
+        {
+          "client_id": "931248924672-i8r1nnerafqb8c3373cgol9hk9mp35ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmhC4JnGkxPmrIT9MUKU5IN21R8VyXY5M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931248924672-i8r1nnerafqb8c3373cgol9hk9mp35ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

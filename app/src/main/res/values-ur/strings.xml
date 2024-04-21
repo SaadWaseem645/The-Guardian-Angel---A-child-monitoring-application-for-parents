@@ -1,0 +1,230 @@
+<resources>
+    <!--Globals-->
+    <string name="app_name">Guardian Angel</string>
+    <string name="_continue">جاری رہے</string>
+    <string name="_set">سیٹ کریں</string>
+    <string name="_save">محفوظ کریں</string>
+    <string name="_accessibility_description">براہ کرم اس وضع کو فعال کریں تاکہ ہم کچھ اسکرینوں کی نگرانی کرسکیں۔</string>
+
+    <string name="splash_title">گارڈین اینجل</string>
+    <string name="splash_description">بچوں کی نگرانی کے لئے ایپ</string>
+
+    <!--Shared Preferences -->
+    <string name="app_preferences">APP_PREFERENCES</string>
+    <string name="sharedpreferences_child_profile_name_key">CHILD_PROFILE_NAME</string>
+    <string name="sharedpreferences_set_pin_key">SET_PIN</string>
+    <string name="sharedpreferences_last_sms_id">SMS_ID</string>
+    <string name="sharedpreference_limit_current_day">LIMIT_DAY</string>
+    <string name="sharedpreferenced_activity">AFTER_SPLASH</string>
+    <string name="sharedpreferenced_admin">ADMIN_KEY</string>
+    <string name="sharedpreferenced_language">LANGUAGE</string>
+
+    <string name="sharedpreferences_contact_1">CONTACT_1</string>
+    <string name="sharedpreferences_contact_2">CONTACT_2</string>
+    <string name="sharedpreferences_contact_3">CONTACT_3</string>
+    <string name="sharedpreferences_contact_4">CONTACT_4</string>
+    <string name="sharedpreferences_contact_5">CONTACT_5</string>
+
+    <!--Main Menu-->
+    <string name="option1">ایس ایم ایس لاگ</string>
+    <string name="option2">سوشل میڈیا</string>
+    <string name="option3">موجودہ مقام</string>
+    <string name="option4">محفوظ کردہ فون نمبر</string>
+    <string name="option5">ایپس</string>
+    <string name="option6">ایپ اسکرینٹیم</string>
+    <string name="location_trigger">جیوفینس ٹرگرز</string>
+    <string name="app_schedules">ایپ شیڈول</string>
+    <string name="change_pin">پن کو تبدیل کریں</string>
+    <string name="monitor_stop">مانیٹرنگ بند کریں</string>
+    <string name="logout">لاگ آوٹ</string>
+    <string name="change_profile">پروفائل تبدیل کریں</string>
+    <string name="screen_mirror">اسکرین مرر</string>
+    <string name="current_status">چائلڈ فون:</string>
+    <string name="online">آن لائن</string>
+    <string name="offline">آف لائن</string>
+
+    <!--Login/Register-->
+    <string name="language">Language/زبان</string>
+    <string name="name">نام</string>
+    <string name="email">ای میل</string>
+    <string name="welcome">خوش آمدید!</string>
+    <string name="sign_in_continue">براہ کرم جاری رکھنے کیلئے سائن ان کریں۔</string>
+    <string name="forget_pass">پاس ورڈ یاد نہیں ہے؟</string>
+    <string name="new_user">نیا صارف؟ ابھی سائن اپ کریں</string>
+    <string name="use_sos">ایس او ایس</string>
+    <string name="register">رجسٹر</string>
+    <string name="new_account">جاری رکھنے کے لئے نیا اکاؤنٹ بنائیں</string>
+    <string name="create">بنائیں</string>
+    <string name="typeEmail">اپنا ای میل ٹائپ کریں</string>
+    <string name="password">پاس ورڈ</string>
+    <string name="confirmPassword">پاس ورڈ کی تصدیق کریں</string>
+    <string name="noAccount">کیا آپ کا اکاؤنٹ نہیں ہے؟ نیا اکاؤنٹ بنائیں</string>
+    <string name="noAccountBold">بنائیں</string>
+    <string name="yesAccount">آپ کا اکاؤنٹ ہے؟ لاگ ان کریں</string>
+    <string name="yesAccountBold">لاگ ان کریں</string>
+    <string name="parent_mode">پیرنٹ موڈ</string>
+    <string name="child_mode">چائلڈ موڈ</string>
+    <string name="log_in">لاگ ان</string>
+    <string name="sign_in">لاگ ان</string>
+    <string name="login_appname">گارڈین اینجل</string>
+
+    <!--font awesome -->
+    <string name="fa_password"></string>
+    <string name="fa_email"></string>
+    <string name="fa_backspace">&#xf55a;</string>
+    <string name="fa_user">&#xf2bd;</string>
+    <string name="fa_child">&#xf1ae;</string>
+    <string name="fa_cross">&#xf00d;</string>
+    <string name="fa_edit">&#xf044d;</string>
+    <string name="fa_history"></string>
+    <string name="fa_schedule"></string>
+    <string name="fa_pin"></string>
+    <string name="fa_delete"></string>
+    <string name="fa_danger"></string>
+    <string name="fa_logout"></string>
+    <string name="fa_camera"></string>
+    <string name="fa_mobile"></string>
+    <string name="fa_sms"></string>
+    <string name="fa_social_media"></string>
+    <string name="fa_location"></string>
+    <string name="fa_language"></string>
+    <string name="fa_time"></string>
+    <string name="fa_contact"></string>
+    <string name="fa_geotrigger"></string>
+    <string name="fa_sos"></string>
+
+    <string name="title_activity_location">نقشہ</string>
+
+    <!--Permission Screen-->
+    <string name="permission_checklist">پرِمیشن چیک لسٹ</string>
+    <string name="permission_description">ایپ کو مناسب طریقے سے چلانے کیلئے ان اجازتوں کی ضرورت ہے۔</string>
+    <string name="enable_perm">اجازت کو فعال کریں</string>
+    <string name="location_permission">مقام کی اجازت</string>
+    <string name="location_permission_description">موبائل کے مقام کا سراغ لگانے کے لئے استعمال کیا جاتا ہے</string>
+    <string name="notification_permission">اطلاع کی اجازت</string>
+    <string name="notification_permission_description">مخصوص ایپس سے نوٹیفیکیشن ڈیٹا پڑھنے کے لئے ضروری ہے</string>
+    <string name="accessibility_permission">رسائی کی اجازت</string>
+    <string name="accessibility_permission_description">صارف کے اعمال اور اسکرین کی تازہ کاریوں کا پتہ لگانے کے لئے استعمال کیا جاتا ہے</string>
+    <string name="contacts_permission">رابطوں کی اجازت</string>
+    <string name="contacts_permission_description">محفوظ رابطوں کو بازیافت کرنے کی ضرورت ہے</string>
+    <string name="mirror_permission">اسکرین کی اجازت</string>
+    <string name="mirror_permission_description">مختلف وقفوں کے درمیان بچوں کی سرگرمی کو پکڑنے کے لئے اس اجازت کی ضرورت ہے۔ یقینی بنائیں کہ "دوبارہ ظاہر نہ کریں" کے اختیار کو منتخب کریں۔</string>
+    <string name="popup_permission">پاپ اپ اجازت</string>
+    <string name="popup_permission_description">ایپ کے عام عمل میں بچوں کی مداخلت کو روکنے کے لئے ، براہ کرم مندرجہ ذیل اسکرین میں دونوں پاپ اپ ونڈوز کی اجازت دیں۔</string>
+    <string name="sms_permission">ایس ایم ایس کی اجازت</string>
+    <string name="sms_permission_description">آپ کے بچے کو موصول ہونے والے SMS کو ٹریک رکھنے کے لئے اس اجازت کی ضرورت ہے۔</string>
+    <string name="usage_permission">استعمال کی اجازت</string>
+    <string name="usage_permission_description">بچے کے موبائل پر ایپ کی سرگرمی کا پتہ لگاتا ہے۔</string>
+    <string name="autostart_permission">آٹو اسٹارٹ اجازت</string>
+    <string name="autostart_permission_description">جب موبائل دوبارہ شروع ہوتا ہے تو یہ اختیارات ایپ کو خود بخود دوبارہ شروع کرنے دیتے ہیں۔</string>
+    <string name="admin_permission">ایڈمن اجازت</string>
+    <string name="admin_permission_description">ایڈمن کی ضرورت ہے تاکہ درخواست کو حذف ہونے سے روکے۔</string>
+
+
+    <!--Child Profile-->
+    <string name="select_profile">چائلڈ پروفائل سیٹ کریں</string>
+    <string name="select_profile_description">چائلڈ کا نیا پروفائل بنائیں یا منتخب کریں اگر کوئی پہلے سے ہی تشکیل پایا ہو۔</string>
+    <string name="no_profiles_found">کوئی پروفائل نہیں ملا</string>
+    <string name="child_name">بچے کے پروفائل کا نام</string>
+    <string name="submit">سبمیٹ</string>
+    <string name="select_parent_profile">چائلڈ پروفائل منتخب کریں</string>
+    <string name="select_parent_profile_description">چائلڈ ایپلی کیشن پر بنایا گیا چائلڈ پروفائل منتخب کریں۔</string>
+    <string name="no_parent_profiles_found">کوئی پروفائل نہیں ملا۔ جاری رکھنے کے لئے براہ کرم چائلڈ ایپلی کیشن پر پروفائل بنائیں۔</string>
+
+    <!-- Location Activity -->
+    <string name="delete">ڈیلیٹ</string>
+    <string name="add_geofence">نیا جیوفینس شامل کریں</string>
+    <string name="geo_name">جیوفینس کا نام</string>
+    <string name="add">ایڈ</string>
+
+    <!--SMS Activity-->
+    <string name="convo">گفتگو</string>
+
+    <!--Screen Mirror-->
+    <string name="screen_mirror_description">چائلڈ موبائل سے آنے والی تصاویر یہاں نظر آئیں گی۔</string>
+
+    <!--Geofence Trigger History-->
+    <string name="geofence_trigger">جیو ٹریگرس</string>
+
+    <!--Notification-->
+    <string name="mirror_notification_description">یہ موبائل گارڈین اینجل کے ذریعہ محفوظ ہے۔</string>
+
+    <!-- Set Pin -->
+    <string name="set_pin">پن کوڈ مرتب کریں</string>
+    <string name="set_pin_description">ایک پن کوڈ بنائیں تاکہ صرف آپ ہی فون پر کچھ ایپس تک رسائی حاصل کرسکیں۔</string>
+    <string name="set_parent_pin_description">نیا پن کوڈ بنائیں۔</string>
+
+
+    <!-- Set Pin -->
+    <string name="get_pin">اس ایپ پر پابندی ہے</string>
+    <string name="get_pin_description">براہ کرم جاری رکھنے کے لئے پن درج کریں۔</string>
+    <string name="go_back">پیچھے</string>
+
+    <string name="logout_pin">براہ کرم لاگ آؤٹ کیلئے پن درج کریں</string>
+
+    <!--Geofence Edit-->
+    <string name="editGeofence">جیوفینس</string>
+
+    <!--Geofence Events-->
+    <string name="place">جگہ</string>
+    <string name="event">ٹرگر</string>
+    <string name="time">وقت</string>
+
+    <!--Forgot Your Password-->
+    <string name="forgot_header">اپنا پاس ورڈ بھول گئے؟</string>
+    <string name="enter_mail">اپنا ای میل درج کریں</string>
+    <string name="send_reset">بھیجیں</string>
+    <string name="forgot_hint">اگر آپ کے ای میل سے وابستہ کوئی اکاؤنٹ ہے تو ، آپ کے ای میل پر پاس ورڈ دوبارہ ترتیب دینے والا لنک بھیجا جائے گا۔</string>
+
+    <!--App Usage-->
+    <string name="today">آج</string>
+    <string name="sevenDay">آخری 7 دن</string>
+
+    <!--App Screentime Limit-->
+    <string name="appScreenTimeLimit">اسکرینٹیم حدود</string>
+    <string name="hrs">گھنٹے</string>
+    <string name="mins">منٹ</string>
+    <string name="set_limit">حد طے کریں</string>
+
+    <!-- SOS Activity -->
+    <string name="sos1">رابطہ 1</string>
+    <string name="sos2">رابطہ 2</string>
+    <string name="sos3">رابطہ 3</string>
+    <string name="sos4">رابطہ 4</string>
+    <string name="sos5">رابطہ 5</string>
+    <string name="sos_country">SOS COUNTRY</string>
+    <string name="select_country">ملک کا انتخاب کیجئے</string>
+
+    <!--Tooltip-->
+    <string name="tooltip_logout">تمام نگرانی کو روکیں اور ایپ سے باہر نکلیں۔</string>
+    <string name="tooltip_mirror">چائلڈ ڈیوائس کے اسکرین شاٹس دیکھیں۔</string>
+    <string name="tooltip_apps">چلڈرن ڈیوائس پر انسٹال کردہ ایپلی کیشنز دیکھیں۔</string>
+    <string name="tooltip_sms">ایس ایم ایس چیک کریں جو آپ کا بچہ بھیج رہا ہے یا وصول کررہا ہے۔</string>
+    <string name="tooltip_social">چیٹ مانیٹر کریں</string>
+    <string name="tooltip_contacts">اپنے بچے کے موبائل پر محفوظ کردہ رابطوں کا معائنہ کریں۔</string>
+    <string name="tooltip_screentime">اپنے بچے کے اسکرین کے استعمال کی نگرانی کریں اور اسکرین کی حد مقرر کریں۔</string>
+    <string name="tooltip_location">بچوں کے مقام کی جانچ کریں اور جیوفینس بنائیں۔</string>
+    <string name="tooltip_trigger">بچوں کے جیوفینس ٹرگر کی تاریخ پر نظر رکھیں۔</string>
+    <string name="tooltip_schedule">ایپ اسکرین کی وقت کی حدود کا نظم کریں۔</string>
+    <string name="tooltip_change_pin">چائلڈ ڈیوائس کیلئے پن تبدیل کریں۔</string>
+    <string name="tooltip_stop">نگرانی کے تمام عمل بند کردیں۔</string>
+
+    <!--App Restricted -->
+    <string name="appRestricted">اس ایپ کے لئے وقت کی حد آج ہوگئی ہے۔</string>
+
+    <!--All Set -->
+    <string name="all_set">یہ موبائل گارڈین اینجل کے ذریعہ محفوظ ہے۔</string>
+
+    <string name="lastUpdate"> آخری آپڈیٹ  </string>
+    <string name="locationHint">جیوفینس بنانے کیلئے ٹیپ کریں اور ہولڈ کریں</string>
+    <string name="stopMonitoringLogout">لاگ آؤٹ کرنے سے پہلے مانیٹرنگ کو روکیں؟</string>
+    <string name="yes">ہاں</string>
+    <string name="no">نہیں</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="widget_label">SOS</string>
+    <string name="add_widget">ویجیٹ شامل کریں</string>
+
+</resources>

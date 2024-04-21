@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient_red"
+    android:padding="@dimen/default_view_padding"
+    tools:context=".Activities.AppRestrictedActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fa_solid_900"
+            android:text="@string/fa_danger"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/yellow"
+            android:textSize="100sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginTop="@dimen/default_margin"
+            android:textColor="@color/white"
+            android:textSize="@dimen/default_header_text"
+            android:textAlignment="center"
+            android:text="@string/appRestricted"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/restricted_continue_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="@color/theme_dark_green"
+        android:textColor="@color/white"
+        android:text="@string/_continue" />
+
+</RelativeLayout>

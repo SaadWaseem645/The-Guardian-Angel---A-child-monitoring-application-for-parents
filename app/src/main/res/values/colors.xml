@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0094cc</color>
+    <color name="colorPrimaryDark">#0081cb</color>
+    <color name="dark_red">#f44336</color>lor>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- General Color -->
+    <color name="white">#ffffff</color>
+    <color name="off_white">#CACACA</color>
+    <color name="black">#000000</color>
+    <color name="grey">#6A000000</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="light_blue">#58C3F6</color>
+    <color name="dark_green">#4caf50</color>
+    <color name="theme_blue">#00B0FF</color>
+    <color name="theme_dark_blue">#0081cb</color>
+    <color name="theme_green">#00e676</color>
+    <color name="theme_dark_green">#00b248</color>
+    <color name="theme_red">#ff7539</color>
+    <color name="theme_dark_red">#ff3d00</color>
+    <color name="yellow">#ffff00</color>
+    <color name="semitransparent">#7C000000</color>
+
+    <!-- Social Media Fragment Colors -->
+    <color name="whatsapp">#25D366</color>
+    <color name="facebook">#4064AC</color>
+    <color name="light_blue_50">#FFE1F5FE</color>
+    <color name="light_blue_200">#FF81D4FA</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+</resources>

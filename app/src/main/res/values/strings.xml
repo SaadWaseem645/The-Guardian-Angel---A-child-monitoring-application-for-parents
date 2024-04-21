@@ -1,0 +1,230 @@
+<resources>
+    <!--Globals-->
+    <string name="app_name">Guardian Angel</string>
+    <string name="_continue">Continue</string>
+    <string name="_set">Set</string>
+    <string name="_save">Save</string>
+    <string name="_accessibility_description">Please enable this mode so we can monitor certain screens.</string>
+
+    <string name="splash_title">Guardian\nAngel</string>
+    <string name="splash_description">A child monitoring application</string>
+
+    <!--Shared Preferences -->
+    <string name="app_preferences">APP_PREFERENCES</string>
+    <string name="sharedpreferences_child_profile_name_key">CHILD_PROFILE_NAME</string>
+    <string name="sharedpreferences_set_pin_key">SET_PIN</string>
+    <string name="sharedpreferences_last_sms_id">SMS_ID</string>
+    <string name="sharedpreference_limit_current_day">LIMIT_DAY</string>
+    <string name="sharedpreferenced_activity">AFTER_SPLASH</string>
+    <string name="sharedpreferenced_admin">ADMIN_KEY</string>
+    <string name="sharedpreferenced_language">LANGUAGE</string>
+
+    <string name="sharedpreferences_contact_1">CONTACT_1</string>
+    <string name="sharedpreferences_contact_2">CONTACT_2</string>
+    <string name="sharedpreferences_contact_3">CONTACT_3</string>
+    <string name="sharedpreferences_contact_4">CONTACT_4</string>
+    <string name="sharedpreferences_contact_5">CONTACT_5</string>
+
+    <!--Main Menu-->
+    <string name="option1">SMS Log</string>
+    <string name="option2">Social Media</string>
+    <string name="option3">Location</string>
+    <string name="option4">Contacts</string>
+    <string name="option5">Applications</string>
+    <string name="option6">App Screentime</string>
+    <string name="location_trigger">Geofence Triggers</string>
+    <string name="app_schedules">Application Schedules</string>
+    <string name="change_pin">Change Pin</string>
+    <string name="monitor_stop">Stop Monitoring</string>
+    <string name="logout">Logout</string>
+    <string name="change_profile">Change Profile</string>
+    <string name="screen_mirror">Screen Mirror</string>
+    <string name="current_status">Current Status:</string>
+    <string name="online">Online</string>
+    <string name="offline">Offline</string>
+
+    <!--Login/Register-->
+    <string name="language">Language/زبان</string>
+    <string name="name">Full Name</string>
+    <string name="email">Email</string>
+    <string name="welcome">Welcome!</string>
+    <string name="sign_in_continue">Please Sign In to continue</string>
+    <string name="forget_pass">Forget Password?</string>
+    <string name="new_user">New User? Sign Up</string>
+    <string name="use_sos">SOS Mode</string>
+    <string name="register">Register</string>
+    <string name="new_account">Create a new account to continue</string>
+    <string name="create">Create</string>
+    <string name="typeEmail">Type Your Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="noAccount">Don\'t have an account? Create</string>
+    <string name="noAccountBold">Create</string>
+    <string name="yesAccount">Already have an account? Login</string>
+    <string name="yesAccountBold">Login</string>
+    <string name="parent_mode">Parent Mode</string>
+    <string name="child_mode">Child Mode</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_in">Sign In</string>
+    <string name="login_appname">Guardian Angel</string>
+
+    <!--font awesome -->
+    <string name="fa_password"></string>
+    <string name="fa_email"></string>
+    <string name="fa_backspace">&#xf55a;</string>
+    <string name="fa_user">&#xf2bd;</string>
+    <string name="fa_child">&#xf1ae;</string>
+    <string name="fa_cross">&#xf00d;</string>
+    <string name="fa_edit">&#xf044d;</string>
+    <string name="fa_history"></string>
+    <string name="fa_schedule"></string>
+    <string name="fa_pin"></string>
+    <string name="fa_delete"></string>
+    <string name="fa_danger"></string>
+    <string name="fa_logout"></string>
+    <string name="fa_camera"></string>
+    <string name="fa_mobile"></string>
+    <string name="fa_sms"></string>
+    <string name="fa_social_media"></string>
+    <string name="fa_location"></string>
+    <string name="fa_language"></string>
+    <string name="fa_time"></string>
+    <string name="fa_contact"></string>
+    <string name="fa_geotrigger"></string>
+    <string name="fa_sos"></string>
+
+    <string name="title_activity_location">Map</string>
+
+    <!--Permission Screen-->
+    <string name="permission_checklist">Permission\nChecklist</string>
+    <string name="permission_description">These permissions are required for the app to operation properly.</string>
+    <string name="enable_perm">Enable Permission</string>
+    <string name="location_permission">Location Permission</string>
+    <string name="location_permission_description">Used for tracking location of the cellphone</string>
+    <string name="notification_permission">Notification Permission</string>
+    <string name="notification_permission_description">Required for reading notification data from specific apps</string>
+    <string name="accessibility_permission">Accessibility Permission</string>
+    <string name="accessibility_permission_description">Used to detect user actions and screen updates</string>
+    <string name="contacts_permission">Contacts Permission</string>
+    <string name="contacts_permission_description">Required to retrieve saved contacts</string>
+    <string name="mirror_permission">Mirror Permission</string>
+    <string name="mirror_permission_description">This permission is required to capture child\'s activity between various intervals. Make sure to select "Don\'t show again" option.</string>
+    <string name="popup_permission">Pop-Up Permission</string>
+    <string name="popup_permission_description">To stop child\'s interference with the app\'s normal processes, please allow both pop-up windows in the following screen.</string>
+    <string name="sms_permission">SMS Permission</string>
+    <string name="sms_permission_description">This permission is required to keep track of SMS that your child receives.</string>
+    <string name="usage_permission">Usage Permission</string>
+    <string name="usage_permission_description">Usage permission keeps track of application activity on child\'s device.</string>
+    <string name="autostart_permission">Auto Start Permission</string>
+    <string name="autostart_permission_description">This options lets the app automatically start again when the device restarts.</string>
+    <string name="admin_permission">Admin Permission</string>
+    <string name="admin_permission_description">Admin privilege are required in order stop the application from being uninstalled.</string>
+
+
+    <!--Child Profile-->
+    <string name="select_profile">Set Child Profile</string>
+    <string name="select_profile_description">Create a new child profile or select if one is already created.</string>
+    <string name="no_profiles_found">No profiles found</string>
+    <string name="child_name">Child Profile Name</string>
+    <string name="submit">Submit</string>
+    <string name="select_parent_profile">Select Child Profile</string>
+    <string name="select_parent_profile_description">Select a child profile created on the child application.</string>
+    <string name="no_parent_profiles_found">No profiles found. Please create a profile on the child application to continue.</string>
+
+    <!-- Location Activity -->
+    <string name="delete">Delete</string>
+    <string name="add_geofence">Add New Geofence</string>
+    <string name="geo_name">Geofence Name</string>
+    <string name="add">Add</string>
+
+    <!--SMS Activity-->
+    <string name="convo">Conversation</string>
+
+    <!--Screen Mirror-->
+    <string name="screen_mirror_description">Images from ~child~\'s screen will appear here</string>
+
+    <!--Geofence Trigger History-->
+    <string name="geofence_trigger">GeoTriggers</string>
+
+    <!--Notification-->
+    <string name="mirror_notification_description">This phone is secured by Guardian Angel</string>
+
+    <!-- Set Pin -->
+    <string name="set_pin">Set a Pin Code</string>
+    <string name="set_pin_description">Create a pin code so that only you can access certain apps on the phone.</string>
+    <string name="set_parent_pin_description">Create a new pin code.</string>
+
+
+    <!-- Set Pin -->
+    <string name="get_pin">This application is restricted</string>
+    <string name="get_pin_description">Please enter pin to continue.</string>
+    <string name="go_back">Go Back</string>
+
+    <string name="logout_pin">Please enter pin to logout</string>
+
+    <!--Geofence Edit-->
+    <string name="editGeofence">Geofences</string>
+
+    <!--Geofence Events-->
+    <string name="place">Place</string>
+    <string name="event">Event</string>
+    <string name="time">Time</string>
+
+    <!--Forgot Your Password-->
+    <string name="forgot_header">Forgot your Password?</string>
+    <string name="enter_mail">Enter your email</string>
+    <string name="send_reset">Send</string>
+    <string name="forgot_hint">If there is an account associated with your email, a password reset link will be sent to your email.</string>
+
+    <!--App Usage-->
+    <string name="today">Today</string>
+    <string name="sevenDay">Last 7 Days</string>
+
+    <!--App Screentime Limit-->
+    <string name="appScreenTimeLimit">Screentime Limits</string>
+    <string name="hrs">Hours</string>
+    <string name="mins">Minutes</string>
+    <string name="set_limit">Set Limit</string>
+
+    <!-- SOS Activity -->
+    <string name="sos1">Contact 1</string>
+    <string name="sos2">Contact 2</string>
+    <string name="sos3">Contact 3</string>
+    <string name="sos4">Contact 4</string>
+    <string name="sos5">Contact 5</string>
+    <string name="sos_country">SOS COUNTRY</string>
+    <string name="select_country">Select Country</string>
+
+    <!--Tooltip-->
+    <string name="tooltip_logout">Stop all monitoring and exit the application.</string>
+    <string name="tooltip_mirror">View captured screenshots from child\'s device.</string>
+    <string name="tooltip_apps">View installed applications on child\'s device.</string>
+    <string name="tooltip_sms">Check SMS that your child is sending or receiving.</string>
+    <string name="tooltip_social">Monitor chats of third-party applications.</string>
+    <string name="tooltip_contacts">Inspect contacts saved on your child\'s device.</string>
+    <string name="tooltip_screentime">Monitor the screen usage of your child and set screen limit.</string>
+    <string name="tooltip_location">Check child\'s location and create geofences.</string>
+    <string name="tooltip_trigger">Monitor child\'s geofence trigger history.</string>
+    <string name="tooltip_schedule">Manage app screentime limits.</string>
+    <string name="tooltip_change_pin">Change pin for child\'s device.</string>
+    <string name="tooltip_stop">Stop all monitoring processes.</string>
+
+    <!--App Restricted -->
+    <string name="appRestricted">Time Limit for this application has been reached for today.</string>
+
+    <!--All Set -->
+    <string name="all_set">This device is protected by Guardian Angel.</string>
+
+    <string name="lastUpdate">Last Updated </string>
+    <string name="locationHint">Tap and hold to create a Geofence</string>
+    <string name="stopMonitoringLogout">Stop Monitoring before logging out?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="widget_label">SOS</string>
+    <string name="add_widget">Add widget</string>
+
+</resources>
